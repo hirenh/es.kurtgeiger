@@ -1,0 +1,391 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 175047664,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the homepage",
+            "match": {
+              "location": "BrandsStepDef.i_am_on_the_homepage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 9828355960,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Select a Brand to view its list of products",
+        "description": "",
+        "id": "brands;select-a-brand-to-view-its-list-of-products",
+        "after": [
+          {
+            "result": {
+              "duration": 1145022974,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7276509453,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I select \"Brands\" category from the header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Brands",
+                  "offset": 10
+                }
+              ],
+              "location": "BrandsStepDef.iSelectCategoryFromTheHeader(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 38817528,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should see the list of brands",
+            "match": {
+              "location": "BrandsStepDef.i_should_see_the_list_of_brands()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5815022335,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I select \"DOLCE \u0026 GABBANA\" brand from the list",
+            "match": {
+              "arguments": [
+                {
+                  "val": "DOLCE \u0026 GABBANA",
+                  "offset": 10
+                }
+              ],
+              "location": "BrandsStepDef.iSelectBrandFromTheList(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 476358173,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should see the list of products from \"DOLCE \u0026 GABBANA\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "DOLCE \u0026 GABBANA",
+                  "offset": 40
+                }
+              ],
+              "location": "BrandsStepDef.iShouldSeeTheListOfProductsFrom(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Brands",
+    "description": "",
+    "id": "brands",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/Brands.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 6958388826,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "I am able to select a product from men category and proceed to checkout page",
+        "description": "",
+        "id": "checkout-page;i-am-able-to-select-a-product-from-men-category-and-proceed-to-checkout-page",
+        "after": [
+          {
+            "result": {
+              "duration": 991194162,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4731547853,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I select \"men\" category from the header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "men",
+                  "offset": 10
+                }
+              ],
+              "location": "BrandsStepDef.iSelectCategoryFromTheHeader(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1032016437,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on PDP",
+            "match": {
+              "location": "CheckOutStepDef.i_am_on_PDP()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8327910365,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I select colour \"brown\" and size \"40\" for the chosen men category",
+            "match": {
+              "arguments": [
+                {
+                  "val": "brown",
+                  "offset": 17
+                },
+                {
+                  "val": "40",
+                  "offset": 34
+                }
+              ],
+              "location": "CheckOutStepDef.iSelectColourAndSizeForTheChosenMenCategory(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6950330151,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I add the product to the bag",
+            "match": {
+              "location": "CheckOutStepDef.i_add_the_product_to_the_bag()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 75663492,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I can see the bag with single item",
+            "match": {
+              "location": "CheckOutStepDef.i_can_see_the_bag_with_single_item()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1962429111,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click \u0027Proceed to Checkout\u0027",
+            "match": {
+              "location": "CheckOutStepDef.i_click_Proceed_to_Checkout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3659617093,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should be on checkout page",
+            "match": {
+              "location": "CheckOutStepDef.i_should_be_on_checkout_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 186881492,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 12,
+                "value": "#Scenario:I am able to checkout as a guest user"
+              }
+            ],
+            "line": 13,
+            "name": "I checkout as a guest",
+            "match": {
+              "location": "CheckOutStepDef.iCheckoutAsAGuest()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1646657049,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I enter all the billing and delivery details",
+            "match": {
+              "location": "CheckOutStepDef.iEnterAllTheBillingAndDeliveryDetails()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 100274678,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I click \u0027Continue to Payment\u0027",
+            "match": {
+              "location": "CheckOutStepDef.iClickContinueToPayment()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56121648,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should be on the payment summary page",
+            "match": {
+              "location": "CheckOutStepDef.iShouldBeOnThePaymentSummaryPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1804478935,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I select to pay by card",
+            "match": {
+              "location": "CheckOutStepDef.iSelectToPayByCard()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30307773256,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I enter credit card \"4929000000008\" with \"0821\" expiry date",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4929000000008",
+                  "offset": 21
+                },
+                {
+                  "val": "0821",
+                  "offset": 42
+                }
+              ],
+              "location": "CheckOutStepDef.iEnterCreditCardWithExpiryDate(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 194990114,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I enter \"123\" CVC code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "123",
+                  "offset": 9
+                }
+              ],
+              "location": "CheckOutStepDef.iEnterCVCCode(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 313868236,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I should see \"Your card number has failed our validity checks and appears to be incorrect Please check and re-enter”",
+            "match": {
+              "location": "CheckOutStepDef.iShouldSeeYourCardNumberHasFailedOurValidityChecksAndAppearsToBeIncorrectPleaseCheckAndReEnter()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "checkout page",
+    "description": "",
+    "id": "checkout-page",
+    "keyword": "Feature",
+    "uri": "src/test/java/features/CheckOut.feature"
+  }
+]
